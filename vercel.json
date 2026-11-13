@@ -1,4 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npx vite build && npx tsx scripts/buildAssetHashes.ts && npx tsx scripts/renderStaticIndex.ts",
   "outputDirectory": "static"
 }
