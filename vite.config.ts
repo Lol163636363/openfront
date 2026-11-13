@@ -557,6 +557,7 @@ export default defineConfig(({ mode }) => {
       port: 9000,
       strictPort: true,
       host: process.env.VITE_HOST === "lan",
+      allowedHosts: ["sb-694yotm4qxkq.vercel.run"],
       // Automatically open the browser when the server starts
       open: process.env.SKIP_BROWSER_OPEN !== "true",
       proxy: {
